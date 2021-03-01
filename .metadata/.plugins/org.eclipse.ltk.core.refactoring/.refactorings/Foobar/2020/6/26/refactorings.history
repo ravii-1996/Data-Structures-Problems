@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Foobar/src/Level2/readme.txt&apos; to &apos;LAMBCHOP.txt&apos;" description="Rename resource &apos;readme.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Level2/readme.txt" name="LAMBCHOP.txt" stamp="1592913070232" updateReferences="true"/>
+</session>

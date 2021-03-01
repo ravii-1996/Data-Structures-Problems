@@ -1,0 +1,49 @@
+package LongJulyContest;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Scanner;
+
+public class MissingPoints {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		try {
+			Scanner sc= new Scanner(System.in);
+			int t= sc.nextInt();
+			while(t-->0)
+			{
+				int n =sc.nextInt();
+				HashMap<Integer,Integer> hmX= new HashMap<>();
+				HashMap<Integer,Integer> hmY= new HashMap<>();
+				
+				for(int i=0;i<(4*n)-1;i++) {
+					int x= sc.nextInt();
+					Integer x1 =hmX.get(x);
+					hmX.put(x, (x1 == null) ? 1 : x1 + 1); 
+
+					int y= sc.nextInt();
+					Integer y1 = hmY.get(y);
+					hmY.put(y, (y1 == null) ? 1 : y1 + 1); 
+
+				}
+				for (Map.Entry<Integer, Integer> val : hmX.entrySet()) { 
+		            if(val.getValue()%2!=0) 
+		            	System.out.println(val.getKey());
+		        }
+				for (Map.Entry<Integer, Integer> val : hmY.entrySet()) { 
+		            if(val.getValue()%2!=0)
+		            	System.out.println(val.getKey());
+		        }
+		
+			}
+			
+		}
+		catch(Exception e) {
+			
+		}
+	}
+
+}

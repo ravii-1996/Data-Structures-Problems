@@ -1,0 +1,28 @@
+package LongDecContest;
+
+import java.util.Scanner;
+
+public class POSPREFS {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int t=sc.nextInt();
+		int n=sc.nextInt();
+		int k=sc.nextInt();
+		int pos=k , neg=n-k;
+		for(int i=1;i<=n;i++) {
+			if(pos>0) {
+				pos--;
+				System.out.println(i);
+				continue;
+			}
+			if(neg>0) {
+				neg--;
+				System.out.println(-i);
+			}
+		}
+		
+	}
+
+}

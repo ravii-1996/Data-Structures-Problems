@@ -1,0 +1,31 @@
+package LongJulyContest;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class ChefinaSwaps {
+
+	public static void main(String[] args) {
+
+
+		try {
+			Scanner sc= new Scanner(System.in);
+			int t= sc.nextInt();
+			while(t-->0)
+			{
+				long n =sc.nextLong();
+				HashSet<Long> hs = new HashSet<>(); 
+				for(int i=0;i<n;i++) {
+					
+				}
+		
+			}
+			
+		}
+		catch(Exception e) {
+			
+		}
+	}
+
+}

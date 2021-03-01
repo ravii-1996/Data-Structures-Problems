@@ -1,0 +1,53 @@
+package LongJulyContest;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class ChefinaSwaps {
+
+	public static void main(String[] args) {
+
+
+		try {
+			Scanner sc= new Scanner(System.in);
+			int t= sc.nextInt();
+			while(t-->0)
+			{
+				int n =sc.nextInt();
+				HashSet<Long> hs = new HashSet<>(); 
+				HashMap<Long,Long> hmX= new HashMap<Long,Long>();
+				HashMap<Long,Long> hmY= new HashMap<Long,Long>();
+				
+				for(int i=0;i<n;i++) {
+					long x= sc.nextLong();
+					hs.add(x);
+					 if (hmX.containsKey(x))  
+			            { 
+			                hmX.put(x, hmX.get(x) + 1); 
+			            }  
+			            else
+			            { 
+			                hmX.put(x, (long)1); 
+			            } 
+					long y = sc.nextLong();
+					hs.add(y);
+					if (hmY.containsKey(y))  
+		            { 
+		                hmY.put(y, hmY.get(y) + 1); 
+		            }  
+		            else
+		            { 
+		                hmY.put(y, (long)1); 
+		            } 
+				}
+		
+			}
+			
+		}
+		catch(Exception e) {
+			
+		}
+	}
+
+}

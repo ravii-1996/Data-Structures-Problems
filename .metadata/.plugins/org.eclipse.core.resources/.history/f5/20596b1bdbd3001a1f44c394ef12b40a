@@ -1,0 +1,31 @@
+package thought.works;
+
+import java.util.Scanner;
+
+public class SuperMatrix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		long a = sc.nextLong()-1;
+		long b = sc.nextLong()-1;
+		long x = sc.nextLong()-1;
+		long y = sc.nextLong()-1;
+		
+		long arr[] = new long[n];
+		for(int i=0;i<n;i++) {
+			arr[i] = sc.nextLong();
+		}
+		
+		long matrix [][] = new long[n][n];
+		
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<n;j++) {
+				
+			}
+		}
+	}
+
+}
